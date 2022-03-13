@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+
+    <script>
+        function login()
+	{
+		var uname = document.getElementById("email").value;
+		var pwd = document.getElementById("pwd1").value;
+		var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		if(uname =='')
+		{
+			alert("please enter user name.");
+		}
+		else if(pwd=='')
+		{
+        	alert("enter the password");
+		}
+		else if(!filter.test(uname))
+		{
+			alert("Enter valid email id.");
+		}
+		else if(pwd.length < 6 || pwd.length > 6)
+		{
+			alert("Password min and max length is 6.");
+		}
+		else
+		{
+	alert('Thank You for Login');
+  
+       window.location = "index.html";
+			}
+	}
+	
+	function clearFunc()
+	{
+		document.getElementById("email").value="";
+		document.getElementById("pwd1").value="";
+	}	
+    </script>
+</head>
+
+<body>
+    <section id="login">
+        <div class="form-box">
+            <div class="header-text">
+                Login
+            </div><input placeholder="Your Email Address" type="text" id="email" class="tb">
+            <input placeholder="Your Password" type="password" id="pwd1" class="tb"> 
+            <input id="terms" type="checkbox"> 
+            <label for="terms">
+            </label>
+            <span>Agree with <a href="#">Terms & Conditions</a></span> 
+            <input type="submit" value="Login" class="button1" onClick="login()" >
+        </div>
+
+    </section>
+
+</body>
+
+</html>

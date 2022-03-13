@@ -1,0 +1,504 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --navbar-height: 59px;
+}
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 120%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+#logo div{
+    color: white;
+    position: absolute;
+    left: 26px;
+    top: 78px;
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+    position: absolute;
+    top: 34px;
+    left: 121px;
+}
+.container{
+
+}
+
+.container2{
+
+}
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+.right {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 25px;
+    
+}
+
+.search-container{
+position: absolute;
+display: inline-block;
+right: 217px;
+top: 14px;
+border: 0px;
+}
+
+.search-container input{
+    padding: 3px;
+    width: 207px;
+    height: 23px;
+}
+
+.btn{
+    position: absolute;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border: 0px;
+    background-color: tomato;
+    top: 0.7px;
+}
+.btn:hover{
+    background-color: rgb(243, 81, 52);
+}
+.cart {
+    font-size: 30px;
+    position: absolute;
+    left: -166px;
+    top: 13px;
+    cursor: pointer;
+    color: white;
+}
+
+.cart:hover{
+    color: rgb(194, 194, 194);
+}
+
+.dropbtn {
+    /* background-color: #4745ae; */
+    background-color: tomato;
+    color: white;
+    padding: 16px 26px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #215377;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* z-index: 1; */
+    right: 0;
+    font-family: 'Jura', sans-serif;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #000000
+}
+
+.right2:hover .dropdown-content {
+    display: block;
+}
+
+.right2:hover .dropbtn {
+    background-color: #0d3857;
+    box-shadow: 0 0 15px tomato;
+}
+
+.right2{
+    position: absolute;
+    right: 0px;
+    top: 26px;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('img/bg.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    font-size: 88px;
+}
+#home h2{
+    color:white;
+    text-align: center;
+    font-family: 'Jura', sans-serif;
+    font-size: 30px;
+    margin: 1%;
+}
+#home hr{
+    width: 680px;
+    background-color: red;
+    height: 1px;
+    border: 0px;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Jura', sans-serif;
+    margin: 1%;
+}
+
+#services-container::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #feeeee;
+    margin-bottom: 20px;
+    width: 215px;
+    text-align: center;
+    /* z-index: -1; */
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Jura', sans-serif;
+    margin: 10px 0px;
+} 
+
+#services .box ul li{
+    list-style: none;
+    font-family: 'Jura', sans-serif;
+    margin: 10px 0px;
+}
+
+#services .box .btn1{
+    padding: 8px 35px;
+    position: relative;
+    top: 11px;
+    /* border: 2px solid brown; */
+    border: 0px;
+    color: white;
+    background-color: tomato;
+    border-radius: 10px;
+    font-family: 'Baloo Bhai';
+    cursor: pointer;
+}
+
+#services .box .btn2{
+    padding: 8px 35px;
+    position: relative;
+    top: 32px;
+    /* border: 2px solid brown; */
+    border: 0px;
+    color: white;
+    background-color: tomato;
+    border-radius: 10px;
+    font-family: 'Baloo Bhai';
+    cursor: pointer;
+}
+
+#services .box .btn3{
+    padding: 8px 35px;
+    position: relative;
+    top: 13px;
+    /* border: 2px solid brown; */
+    border: 0px;
+    color: white;
+    background-color: tomato;
+    border-radius: 10px;
+    font-family: 'Baloo Bhai';
+    cursor: pointer;
+}
+
+#visit-section{
+    position: relative;
+}
+
+#visit-section::before{
+    content: "";
+    position: absolute;
+    background: url('img/bg3.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#visit{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#visit .mail input{
+    width: 261px;
+    height: 37px;
+    font-family: 'Jura';
+    font-size: initial;
+    border: 1px solid tomato;
+    padding: 4px;
+    font-weight: bold;
+}
+
+#socialmedia{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visit-item{
+    
+    padding: 28px;
+}
+
+.visit-item img{
+    height: 40px;
+}
+
+.visit-item img:hover{
+    /* height: 42px;
+    border-radius: 50px;
+    background-color: grey; */
+    /* border: 5px solid  #7c7b7b; */
+    box-shadow: 0 0 15px  #6d6c6c;
+    transition: all 0.2s ease;
+    /* border-radius: 50px; */
+}
+
+.btn4{
+    padding: 9px 22px;
+    position: relative;
+    top: -3px;
+    /* border: 2px solid brown; */
+    border: 1px solid tomato;
+    color: white;
+    background-color: tomato;
+    font-family: 'Baloo Bhai';
+    cursor: pointer;
+    height: 46px;
+}
+
+#login{
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai';
+    font-size: 16px;
+    color: #fff;
+}
+.form-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: auto auto;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 430px;
+}
+.form-box:before {
+    background-image: url("https://images.unsplash.com/photo-1525253013412-55c1a69a5738?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    display: block;
+    /* filter: blur(2px); */
+}
+.form-box .header-text {
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.form-box input {
+    margin: 10px 0px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.form-box input[type=checkbox] {
+    display: none;
+}
+.form-box label {
+    position: relative;
+    margin-left: 5px;
+    margin-right: 10px;
+    top: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.form-box label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #ddd;
+}
+.form-box input[type=checkbox]:checked+label:before {
+    content: "\2713";
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    line-height: 20px;
+}
+.form-box span {
+    font-size: 14px;
+}
+.form-box .button1 {
+    background-color: tomato;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px 0px;
+}
+.form-box .button1:hover{
+    box-shadow: 0 0 7px rgb(255, 142, 122);
+}
+span a {
+    color: #BBB;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+.h-primary{
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 2.8rem;
+    padding: 12px;
+    color: rgb(49, 49, 49);
+}
+
+.h-secondary{
+    font-family: 'Baloo Bhai', cursive;
+    
+    color: rgb(49, 49, 49);
+    
+}
+
+.center{
+    text-align: center;
+}
